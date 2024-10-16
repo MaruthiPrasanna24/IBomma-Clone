@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBomma</title>
+    <link rel="stylesheet" href="demo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+    #download{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        background: yellow;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 600px;
+        margin-top: 30px;
+    }
+</style>
+
+</head>
+<body>
+<header>    
+   <nav>
+    <div class="logo">
+        <img src="https://ibomma.online/wp-content/uploads/2024/02/cropped-logo-yellow.png">
+    </div>
+    <div class="navbar">
+        <a href="#"><i class="fa-solid fa-house-chimney"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-info"></i>About</a>
+        <a href="#"><i class="fa-solid fa-bug"></i>Bug</a>
+    </div>
+    <form action="#">
+        <input type="search" class="search" placeholder="Search" required>
+        <button type="submit" class="fa-solid fa-magnifying-glass"></button>
+    </form>
+   </nav> 
+<div class="Container">
+    <a href="https://hubcloud.lol/drive/pgc91ezgktqcowo" target="_blank"><buttons id="download" disabled></buttons></a>
+</div>  
+<script>
+    var downloadbtn=document.getElementById("download");
+    var counter=5;
+    downloadbtn.innerHTML="please wait for 5 seconds";
+    var id;
+
+    id=setInterval (function(){
+        counter--;
+        if(counter==0){
+            downloadbtn.innerHTML="Download";
+            downloadbtn.removeAttribute("disabled")
+            clearInterval(id)
+        }else{
+            downloadbtn.innerHTML="please wait for " + counter.toString() + " seconds";
+        }
+    },1000)
+
+</script> 
+</header> 
+</body>
+</html>  
+
+
+
+
+<div class="Container1">
+    <a href="https://hubcloud.art/drive/fvf811rapga0u1w" target="_blank"><buttons id="download" disabled></buttons></a>
+</div> 
